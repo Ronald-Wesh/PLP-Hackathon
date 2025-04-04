@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4609a6aa35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Ronald2.png"class="logo" alt="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home.</a></li>
+               <li><a href="#about">About.</a></li>
+                <li><a href="#services">Services.</a></li>
+                <li><a href="#portfolio">Portfolio.</a></li>
+                <li><a href="#contact">Contact.</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+        </nav>
+            <div class="header-text">
+                <p>Web Design</p>
+                <h1 class="sub-title">Hi,I'm <span>Ronald </span> Waweru from <span>Kenya. Tech</span> and l are <span>exclusive</span>-it updates
+                    me and l debug it.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/lap.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hey there! I'm Ronald, a Computer Science student with a passion 
+                        for coding and solving tech puzzles. I believe every problem has
+                        a solution—sometimes it just takes a little more coffee and a 
+                        lot more persistence.
+                    </p>
+                    <p>
+                        Passionate about coding and problem-solving, I am always eager to learn and explore new technologies. 
+                        I enjoy turning complex problems into efficient, working systems. With a curious mind and a love 
+                        for all things tech, I embrace every challenge as an opportunity to grow and create.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development:</span>Creating, building and
+                                 maintaining websites and web applications.</li>
+                            <li><span>Database:</span> MySQL Database.</li>
+                            <li><span>UI/UX:</span> Designing Web/App Interfaces.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>Hackathons :</span> Attend and contribute in Hackathons.</li>
+                            <li><span>Bootcamps :</span> Attend Bootcamps.</li>
+                            <li><span>Projects :</span>Completed and still doing projects.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023- Current :</span> Chuka University.</li>
+                            <li><span>2019-2022 :</span>Murang'a High School.</li>
+                            <li><span>2014-2018 :</span>Green Edgewood Academy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I help businesses and individuals
+                         build professional, responsive
+                         and user-friendly websites that meet
+                          their needs. Whether you need a personal 
+                          portfolio, business website, e-commerce 
+                          store or web app. I’ve got you covered!</p> 
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>I help businesses and individuals
+                         build efficient, scalable, and 
+                         automated solutions using Python.
+                          Whether you need a web application, 
+                          data analysis tool, automation script 
+                          or database integration.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list"> 
+                <div class="work">
+                    <img src="images/find.png" alt="FindMe App">
+                    <div class="layer">
+                        <h3>FindMe App</h3>
+                        <p>FindMe is an app I'm working on that aims
+                             to reunite lost children with their families
+                              using technology. The goal is to create a 
+                              platform where missing children can be reported
+                               and identified quickly, leveraging AI and a 
+                               secure database to match cases efficiently.
+                                It's still in development, but the focus 
+                                is on making reunification faster, safer
+                                 and more accessible for families in need.</p>
+                        <a href="#"><i class="fa-solid fa-anchor"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web.png" alt="Websites">
+                    <div class="layer">
+                        <h3>Websites</h3>
+                        <p>I'm passionate about web development because it
+                             blends creativity with logic. I want to master
+                              both front-end and back-end to create not just
+                               functional but outstanding websites. My goal 
+                               is to push beyond the basics, stay updated 
+                               with the latest tech, and build remarkable 
+                               web experiences.</p>
+                        <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -------contact------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ronaldwaweru8@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0756490680</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                     <a href="Ronald_Waweru_CV.pdf" download="Ronald_Waweru_CV.pdf"class="btn btn2">Download CV</a> 
+                </div>
+                <div class="contact-right">
+                    <form action="mailto:ronaldwaweru8@gmail.com" method="GET" enctype="text/plain">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright  &copy. Made <i class="fa-solid fa-heart-pulse"></i> by Ronald</p>
+        </div>
+    </div>
+       
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
